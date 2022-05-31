@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@tailwind base;
+@layer base {
+	html,
+	body {
+		font-family: "Poppins", sans-serif;
+		background: url("./assets/ground.png") 0% 0% / cover no-repeat;
+		@apply h-full overflow-x-hidden w-full;
+	}
+}
+@tailwind components;
+
+@tailwind utilities;
+.wallet-adapter-button-trigger {
+	background-color: #512da8 !important;
+}
+.animation {
+	animation: 4s ease 0s infinite normal none running animation;
+}
+
+@keyframes animation {
+	0% {
+		transform: rotate(0deg) translate3d(5px, 0px, 0px) rotate(0deg);
+	}
+	100% {
+		transform: rotate(1turn) translate3d(5px, 0px, 0px) rotate(-1turn);
+	}
+}
